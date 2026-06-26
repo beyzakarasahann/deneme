@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: atelier-site
+  name: beyza-lab
   labels:
-    app: atelier-site
+    app: beyza-lab
 spec:
   type: ClusterIP
   selector:
-    app: atelier-site
+    app: beyza-lab
   ports:
     - port: 80
       targetPort: 8080

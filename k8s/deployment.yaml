@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: atelier-site
+  name: beyza-lab
   labels:
-    app: atelier-site
+    app: beyza-lab
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: atelier-site
+      app: beyza-lab
   template:
     metadata:
       labels:
-        app: atelier-site
+        app: beyza-lab
     spec:
       containers:
-        - name: atelier-site
+        - name: beyza-lab
           image: ghcr.io/beyzakarasahann/deneme:latest
           ports:
             - containerPort: 8080
